@@ -1,0 +1,238 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jason Harenfa | Visnyth</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/3000ffabee.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="projects/Horror Maze gemple.mp4" type="video/mp4" />
+      </video>
+      <div class="container">
+        <nav>
+          <img src="projects/Jason Harenfa-01.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-ellipsis-vertical" onclick="openMenu()"></i>
+        </nav>
+      </div>
+      <div class="textMid">
+        <div class="content">
+          <h1>Jason Harenfa</h1>
+          <h2>Indie Game Developer</h2>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="projects/giphy (2).gif" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              A high school fresh graduate that is passionate about game development. Been making games since 6 months ago, in which my first one is
+              around one year ago. I aspire to be involved in the making of a big title game. Will learn and do my best to achieve that dream.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span>Game Development</span><br />Game Design / Game Programming</li>
+                <li><span>Graphic Design</span><br />Adobe Photshop / Adobe Illustrator</li>
+                <li><span>Web Development</span><br />UI Designing</li>
+                <li><span>Video Editing</span><br />Adobe After Effects / Adobe Premiere Pro</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>July 2021</span><br />Project Based Internship (Game Programming)</li>
+                <li><span>November 2022 - Present</span><br />Personal Projects</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>2011 - 2017</span><br />Yehonala Elementary School</li>
+                <li><span>2017 - 2020</span><br />Maitreyawira Junior High School</li>
+                <li><span>2020 - 2023</span><br />Maitreyawira Vocational High School (Multimedia)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-gamepad fa-fade"></i>
+            <h2>Game Development</h2>
+            <p>Game design, game programming, game plan, and such will be worked on this sector.</p>
+            <a href="#services">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-brush fa-fade"></i>
+            <h2>Graphic Design</h2>
+            <p>Photo manipulation, design creation, logos, posters, and such will be worked on this sector.</p>
+            <a href="#services">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-video fa-fade"></i>
+            <h2>Video Editing</h2>
+            <p>Animation, video manipulation, audio video merging, and such will be worked on this sector.</p>
+            <a href="#services">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Works</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="projects/Abberation Logo (1).png" alt="" />
+            <div class="layer">
+              <h3>Abberation</h3>
+              <p>My newest project as of now, made to learn about post processing and level design.</p>
+              <a href="https://visnyth.itch.io/aberration">Click Here!</a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="projects/horor maze.png" alt="" />
+            <div class="layer">
+              <h3>Run Bro Run</h3>
+              <p>Made to learn about 3D game making and maze generation.</p>
+              <a href="https://visnyth.itch.io/run-bro-run">Click Here!</a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="projects/kyoushi.png" alt="" />
+            <div class="layer">
+              <h3>Kyou-Shi</h3>
+              <p>My first game project, made to complete Project Based Internship offered by school.</p>
+              <a href="https://visnyth.itch.io/kyou-shi">Click Here!</a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="projects/froog.png" alt="" />
+            <div class="layer">
+              <h3>Froog</h3>
+              <p>Minigame #1, made as a version of flappy bird with 2D light as a game mechanic.</p>
+              <a href="https://visnyth.itch.io/froog">Click Here!</a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="projects/gacha.png" alt="" />
+            <div class="layer">
+              <h3>Gacha Sim</h3>
+              <p>Minigame #2, made to find out about gacha and probability system.</p>
+              <a href="https://visnyth.itch.io/beany">Click Here!</a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="projects/beani.jpg" alt="" />
+            <div class="layer">
+              <h3>Beany</h3>
+              <p>Minigame #3, made to learn about 2D top down shooter mechanic like vampire survivors.</p>
+              <a href="https://visnyth.itch.io/gacha-sim">Click Here!</a>
+            </div>
+          </div>
+        </div>
+        <button class="btn">See More</button>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-solid fa-inbox"></i> j.harenfa@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +62 89506367778</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/visnyth/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://wa.me/+6289506367778"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://visnyth.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="Email" placeholder="Your Email" required />
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Made by Jason Harenfa | Visnyth</p>
+      </div>
+    </div>
+
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+      function closeMenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycby5G2srJReFF2a8dSW9iFKEI0qH5jXoZP7CsPs_5tl-kC2zkDebiyK7e5kDt0Qu6iwywg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>

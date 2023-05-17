@@ -464,10 +464,13 @@ nav .fa-ellipsis-vertical {
     margin-bottom: 30px;
   }
   .about-col-2 {
-    font-size: 14px;
+    font-size: 12px;
   }
   .contact-left,
   .contact-right {
     flex-basis: 100%;
+  }
+  .work-list {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 }

@@ -6,8 +6,12 @@
     <title>Jason Harenfa | Visnyth</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/3000ffabee.js" crossorigin="anonymous"></script>
+    <script src="jquery-2.1.4.js"></script>
   </head>
   <body>
+    <div id="preloader"></div>
+
+    <!-- Header -->
     <div id="header">
       <video autoplay loop muted plays-inline class="back-video">
         <source src="projects/Horror Maze gemple.mp4" type="video/mp4" />
@@ -196,6 +200,10 @@
       </div>
     </div>
 
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
     <script>
       var tabLinks = document.getElementsByClassName("tab-links");
       var tabContents = document.getElementsByClassName("tab-contents");
@@ -233,6 +241,20 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
+    </script>
+    <script>
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener(
+        "load",
+        function (load) {
+          window.removeEventListener("load", load, false);
+          setTimeout(function () {
+            loader.classList.add("disappear");
+          }, 3500);
+        },
+        false
+      );
     </script>
   </body>
 </html>

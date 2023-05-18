@@ -446,6 +446,11 @@ nav .fa-ellipsis-vertical {
 }
 
 @media only screen and (max-width: 950px) {
+  #preloader {
+    background: #262626 url(projects/ZWdx.gif) no-repeat center center;
+    background-size: 50%;
+  }
+  
   .back-video {
     width: auto;
     height: auto;

@@ -257,6 +257,13 @@ nav ul li a:hover::after {
   margin-top: 50px;
 }
 
+.work-list-graphic {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
 .work {
   border-radius: 10px;
   position: relative;
@@ -340,6 +347,62 @@ nav ul li a:hover::after {
 .btn:hover {
   background: white;
   color: #444444;
+}
+
+.tab-links-project {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links-project::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: chocolate;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links-project.active-link-project::after {
+  width: 50%;
+}
+
+.tab-contents-project ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents-project ul li span {
+  color: chocolate;
+  font-size: 14px;
+}
+
+.tab-contents-project {
+  display: none;
+}
+
+.tab-contents-project.active-tab-project {
+  display: block;
+}
+
+.tab-graphic {
+  margin: 0 10%;
+  margin-top: -3%;
+}
+
+.tab-video {
+  margin: 0 10%;
+  margin-top: -5.7%;
+}
+
+.tab-other {
+  margin: 0 10%;
+  margin-top: -5.7%;
 }
 
 /* Contact */
@@ -450,7 +513,7 @@ nav .fa-ellipsis-vertical {
     background: #262626 url(projects/ZWdx.gif) no-repeat center center;
     background-size: 50%;
   }
-  
+
   .back-video {
     width: auto;
     height: auto;
